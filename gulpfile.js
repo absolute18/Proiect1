@@ -11,8 +11,6 @@ function allcss(){
 exports.allcss = allcss;
 
 
-var source = ['fa-regular-400.svg','fa-regular-400.eot',  '.ttf woff woff2']
-
 function fonts(){
 	return src(["node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.eot"
 		,"node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.svg",
