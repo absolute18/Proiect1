@@ -1,6 +1,6 @@
 const {src,dest} =  require('gulp');
 function css(){
-	return src("css/style.css").pipe(dest("img"));
+	return src("node_modules/bootstrap/dist/css/bootstrap.css").pipe(dest("css"));
 }
 
 exports.css = css;
@@ -22,4 +22,3 @@ function fonts(){
 
 }
 exports.fonts = fonts;
-
