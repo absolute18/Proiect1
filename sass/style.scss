@@ -1,0 +1,42 @@
+header{
+	#top{	
+			.logo{
+				font-size:40px;
+				color:red;
+			}
+			.meniu-button{
+				&:hover{
+					color:red;
+				}
+				color:#424851;
+				font-size:15px;
+				text-align:right;
+			}
+	}
+ }
+#about{
+	font-family: 'Muli', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	img-about{
+
+	}
+	.content-about{
+	
+		.title-about{
+			font-size:50px;
+			color:#424851;
+			margin-bottom: 24px;
+			font-weight: 900;
+		}
+		.button-about{
+			font-size:15px;
+			
+		}
+		.text-about{
+			color:#424851;
+			font-size:17px;
+			margin-bottom: 24px;
+		}
+	}
+}

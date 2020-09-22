@@ -1,10 +1,26 @@
+header #top .logo {
+  font-size: 40px;
+  color: red; }
 
-.title{
-	text-align:center;
-}
-.button-featured{
-	text-align:center;
-}
-.copyright{
-	text-align:center;
-}
+header #top .meniu-button {
+  color: #424851;
+  font-size: 15px;
+  text-align: right; }
+  header #top .meniu-button:hover {
+    color: red; }
+
+#about {
+  font-family: 'Muli', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+  #about .content-about .title-about {
+    font-size: 50px;
+    color: #424851;
+    margin-bottom: 24px;
+    font-weight: 900; }
+  #about .content-about .button-about {
+    font-size: 15px; }
+  #about .content-about .text-about {
+    color: #424851;
+    font-size: 17px;
+    margin-bottom: 24px; }

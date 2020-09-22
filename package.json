@@ -12,7 +12,10 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.2",
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^4.1.0",
+    "jquery": "^3.5.1",
+    "sass": "^1.26.11"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
