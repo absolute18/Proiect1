@@ -1,26 +1,75 @@
-header #top .logo {
-  font-size: 40px;
-  color: red; }
+/* VARIABLES */
+@font-face {
+  font-family: 'muli';
+  src: url("../fonts/muli-webfont.woff2") format("woff2"), url("../fonts/muli-webfont.ttf") format("ttf"), url("../fonts/muli-webfont.woff") format("woff"); }
 
-header #top .meniu-button {
-  color: #424851;
-  font-size: 15px;
-  text-align: right; }
-  header #top .meniu-button:hover {
-    color: red; }
-
-#about {
-  font-family: 'Muli', Arial, sans-serif;
-  font-weight: 400;
+@font-face {
+  font-family: 'mulibold';
+  src: url("muli-bold-webfont.woff2") format("woff2"), url("muli-bold-webfont.ttf") format("woff"), url("muli-bold-webfont.woff") format("woff");
+  font-weight: normal;
   font-style: normal; }
+
+/* HEADER */
+header #top {
+  margin: 40px 0; }
+  header #top .logo {
+    font-size: 40px;
+    color: #f13b3b;
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-family: 'Mulish', sans-serif; }
+  header #top .meniu-button {
+    text-align: right;
+    margin: 15px 0 0 0; }
+    header #top .meniu-button button {
+      border: none;
+      background: #fff;
+      font-weight: 600;
+      color: #424851;
+      font-size: 15px; }
+      header #top .meniu-button button:hover {
+        color: red; }
+
+/* ABOUT */
+#about .img-about img {
+  box-shadow: 45px 45px #f2f3f3; }
+
+#about .content-about {
+  margin-top: 100px; }
   #about .content-about .title-about {
     font-size: 50px;
     color: #424851;
     margin-bottom: 24px;
-    font-weight: 900; }
-  #about .content-about .button-about {
-    font-size: 15px; }
+    line-height: 55px; }
+  #about .content-about .button-about button {
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    background: #f13b3b;
+    padding: 11px 40px;
+    border: none;
+    font-family: 'Mulibold', Arial, sans-serif;
+    font-weight: bold; }
   #about .content-about .text-about {
     color: #424851;
-    font-size: 17px;
-    margin-bottom: 24px; }
+    font-size: 16px;
+    margin-bottom: 24px;
+    font-family: 'Muli', Arial, sans-serif; }
+
+/* FEATURED */
+#featured .title {
+  font-size: 37px;
+  color: #424851;
+  font-family: 'mulibold', Arial, sans-serif;
+  text-align: center;
+  margin: 82px 0;
+  font-weight: 900; }
+  #featured .title:after {
+    border-bottom: 2px solid #f13b3b;
+    content: "";
+    /* Necesar pentru a functiona after */
+    display: block;
+    /* Bloc*/
+    margin: 0 auto;
+    /* Asta centreaza linia pe centru */
+    width: 3%;
+    padding-top: 30px; }

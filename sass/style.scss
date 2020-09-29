@@ -1,42 +1,118 @@
-header{
-	#top{	
-			.logo{
-				font-size:40px;
-				color:red;
-			}
-			.meniu-button{
-				&:hover{
-					color:red;
-				}
-				color:#424851;
-				font-size:15px;
-				text-align:right;
-			}
-	}
- }
-#about{
-	font-family: 'Muli', Arial, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-	img-about{
+/* VARIABLES */
+$red: #f13b3b;
+$gray: #f2f3f3;
+$gray-2: #424851;
+@mixin title(){
+	font-size: 37px;
+	color: $gray-2;
+	font-family: 'mulibold', Arial, sans-serif;
+}
 
+@font-face {
+    font-family: 'muli';
+    src: url('../fonts/muli-webfont.woff2') format('woff2'),
+         url('../fonts/muli-webfont.ttf') format('ttf'),
+         url('../fonts/muli-webfont.woff') format('woff');  
+}
+
+@font-face {
+    font-family: 'mulibold';
+    src: url('muli-bold-webfont.woff2') format('woff2'),
+         url('muli-bold-webfont.ttf') format('woff'),
+         url('muli-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* HEADER */
+header{
+
+	#top{	
+		margin: 40px 0;
+		
+		.logo{
+			font-size: 40px;
+			color: $red;
+			letter-spacing: -1px;
+			font-weight: 900;
+			font-family: 'Mulish', sans-serif;
+		}
+
+		.meniu-button{
+			text-align: right;
+			margin: 15px 0 0 0;
+			button{
+				border: none;
+				background: #fff;
+				font-weight: 600;
+				color: $gray-2;
+				font-size: 15px;
+
+				&:hover{
+				color: red;
+				}
+			}
+		}
+	}
+}
+
+/* ABOUT */
+#about{
+
+	.img-about{ 
+
+		img{
+		box-shadow: 45px 45px $gray;
+		}
 	}
 	.content-about{
-	
+		margin-top: 100px;
+
 		.title-about{
-			font-size:50px;
-			color:#424851;
+			font-size: 50px;
+			color: #424851;
 			margin-bottom: 24px;
-			font-weight: 900;
+			line-height: 55px;
 		}
+
 		.button-about{
-			font-size:15px;
+
+			button{
+				letter-spacing: -1px;
+				color: #FFFFFF;
+				background: $red;
+				padding: 11px 40px;
+				border: none;
+				font-family: 'Mulibold', Arial, sans-serif;
+				font-weight: bold;
+			}
 			
 		}
+
 		.text-about{
-			color:#424851;
-			font-size:17px;
+			color: $gray-2;
+			font-size: 16px;
 			margin-bottom: 24px;
+			font-family: 'Muli', Arial, sans-serif;
+		}
+	}
+}
+
+/* FEATURED */
+#featured{
+	.title{
+		@include title();
+		text-align: center;
+		margin: 82px 0;
+		font-weight: 900;
+		&:after{
+			border-bottom: 2px solid $red;
+			content: ""; /* Necesar pentru a functiona after */
+	    display: block; /* Bloc*/
+	    margin: 0 auto; /* Asta centreaza linia pe centru */
+	    width: 3%; 	
+	    padding-top: 30px;
 		}
 	}
 }
