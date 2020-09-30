@@ -73,3 +73,28 @@ header #top {
     /* Asta centreaza linia pe centru */
     width: 3%;
     padding-top: 30px; }
+
+#featured .img-1 img {
+  width: 344px;
+  height: 344px;
+  z-index: -1; }
+
+#featured .category-featured {
+  position: absolute;
+  color: #ffffff;
+  top: 30%;
+  left: 40%;
+  font-weight: 900; }
+
+#featured .title-featured {
+  position: absolute;
+  bottom: 20%;
+  color: #ffffff;
+  font-weight: 900; }
+
+#featured .time-featured {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+  color: #ffffff;
+  font-weight: 900; }

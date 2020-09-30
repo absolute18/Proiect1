@@ -101,6 +101,8 @@ header{
 
 /* FEATURED */
 #featured{
+	.owl-carousel{
+	}
 	.title{
 		@include title();
 		text-align: center;
@@ -114,5 +116,32 @@ header{
 	    width: 3%; 	
 	    padding-top: 30px;
 		}
+	}
+	.img-1{
+		img{
+		width: 344px; 
+		height: 344px;
+		z-index: -1;
+		}
+	}
+	.category-featured{
+		position: absolute;
+		 color: #ffffff;
+		 top: 30%;
+		 left: 40%;
+		 font-weight: 900;
+	}
+	.title-featured{
+	  position: absolute;
+	  bottom: 20%;
+	  color: #ffffff;
+	  font-weight: 900;
+	}
+	.time-featured{
+		position: absolute;
+		bottom: 10%;
+		right: -10%;
+		color: #ffffff;
+		font-weight: 900;
 	}
 }
