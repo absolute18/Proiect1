@@ -117,30 +117,21 @@ header{
 		}
 	}
 	.img-1{
-		img{
-		width: 344px; 
-		height: 344px;
-		z-index: -1;
-		}
+    background-color: green;
 	}
-	.category-featured{
-		position: absolute;
-		 color: #ffffff;
-		 top: 30%;
-		 left: 40%;
-		 font-weight: 900;
+		.img-2{
+		background-color: green;
 	}
-	.title-featured{
-	  position: absolute;
-	  bottom: 20%;
-	  color: #ffffff;
-	  font-weight: 900;
+		.img-3{
+		background-color: green;
 	}
-	.time-featured{
-		position: absolute;
-		bottom: 10%;
-		right: -10%;
-		color: #ffffff;
-		font-weight: 900;
+		.img-4{
+		background-color: green;
+	}
+		.img-5{
+		background-color: green;
+	}
+		.img-6{
+		background-color: green;
 	}
 }

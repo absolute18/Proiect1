@@ -74,27 +74,20 @@ header #top {
     width: 3%;
     padding-top: 30px; }
 
-#featured .img-1 img {
-  width: 344px;
-  height: 344px;
-  z-index: -1; }
+#featured .img-1 {
+  background-color: green; }
 
-#featured .category-featured {
-  position: absolute;
-  color: #ffffff;
-  top: 30%;
-  left: 40%;
-  font-weight: 900; }
+#featured .img-2 {
+  background-color: green; }
 
-#featured .title-featured {
-  position: absolute;
-  bottom: 20%;
-  color: #ffffff;
-  font-weight: 900; }
+#featured .img-3 {
+  background-color: green; }
 
-#featured .time-featured {
-  position: absolute;
-  bottom: 10%;
-  right: -10%;
-  color: #ffffff;
-  font-weight: 900; }
+#featured .img-4 {
+  background-color: green; }
+
+#featured .img-5 {
+  background-color: green; }
+
+#featured .img-6 {
+  background-color: green; }
