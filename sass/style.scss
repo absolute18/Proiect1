@@ -8,6 +8,17 @@ $gray-2: #424851;
 	font-family: 'mulibold', Arial, sans-serif;
 }
 
+@mixin img-carousel(){
+	max-width: none;
+	width: 344px;
+	height: 344px;
+	color: #fff;
+}
+@mixin position-img(){
+	left: 40px;
+	position: absolute;
+}
+
 @font-face {
     font-family: 'muli';
     src: url('../fonts/muli-webfont.woff2') format('woff2'),
@@ -105,7 +116,7 @@ header{
 	.title{
 		@include title();
 		text-align: center;
-		margin: 82px 0;
+		margin: 82px 0 30px 0;
 		font-weight: 900;
 		&:after{
 			border-bottom: 2px solid $red;
@@ -113,25 +124,52 @@ header{
 	    display: block; /* Bloc*/
 	    margin: 0 auto; /* Asta centreaza linia pe centru */
 	    width: 3%; 	
-	    padding-top: 30px;
+	    margin-top: 30px;
 		}
 	}
 	.img-1{
-    background-color: green;
+ 	  background-image: url("../img/art.jpg");
+		@include img-carousel();
+			.category-featured{
+				@include position-img();
+				font-weight: 900;
+				top: 130px;
+				background: $red;
+				padding: 5px 12px;
+				font-size: 13px;
+			}
+			.title-featured{
+				@include position-img();
+				font-weight: 900;
+				font-size: 28px;
+				line-height: 30px;
+				top: 180px;
+				right: 40px;
+			}
+			.time-featured{
+				@include position-img();
+				font-size: 13px;
+				top: 280px;
+			}
 	}
-		.img-2{
+	.img-2{
 		background-color: green;
+		@include img-carousel();
 	}
-		.img-3{
+	.img-3{
 		background-color: green;
+		@include img-carousel();
 	}
-		.img-4{
+	.img-4{
 		background-color: green;
+		@include img-carousel();
 	}
-		.img-5{
+	.img-5{
 		background-color: green;
+	  @include img-carousel();
 	}
-		.img-6{
+	.img-6{
 		background-color: green;
+	  @include img-carousel();
 	}
 }

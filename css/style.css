@@ -61,7 +61,7 @@ header #top {
   color: #424851;
   font-family: 'mulibold', Arial, sans-serif;
   text-align: center;
-  margin: 82px 0;
+  margin: 82px 0 30px 0;
   font-weight: 900; }
   #featured .title:after {
     border-bottom: 2px solid #f13b3b;
@@ -72,22 +72,67 @@ header #top {
     margin: 0 auto;
     /* Asta centreaza linia pe centru */
     width: 3%;
-    padding-top: 30px; }
+    margin-top: 30px; }
 
 #featured .img-1 {
-  background-color: green; }
+  background-image: url("../img/art.jpg");
+  max-width: none;
+  width: 344px;
+  height: 344px;
+  color: #fff; }
+  #featured .img-1 .category-featured {
+    left: 40px;
+    position: absolute;
+    font-weight: 900;
+    top: 130px;
+    background: #f13b3b;
+    padding: 5px 12px;
+    font-size: 13px; }
+  #featured .img-1 .title-featured {
+    left: 40px;
+    position: absolute;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 30px;
+    top: 180px;
+    right: 40px; }
+  #featured .img-1 .time-featured {
+    left: 40px;
+    position: absolute;
+    font-size: 13px;
+    top: 280px; }
 
 #featured .img-2 {
-  background-color: green; }
+  background-color: green;
+  max-width: none;
+  width: 344px;
+  height: 344px;
+  color: #fff; }
 
 #featured .img-3 {
-  background-color: green; }
+  background-color: green;
+  max-width: none;
+  width: 344px;
+  height: 344px;
+  color: #fff; }
 
 #featured .img-4 {
-  background-color: green; }
+  background-color: green;
+  max-width: none;
+  width: 344px;
+  height: 344px;
+  color: #fff; }
 
 #featured .img-5 {
-  background-color: green; }
+  background-color: green;
+  max-width: none;
+  width: 344px;
+  height: 344px;
+  color: #fff; }
 
 #featured .img-6 {
-  background-color: green; }
+  background-color: green;
+  max-width: none;
+  width: 344px;
+  height: 344px;
+  color: #fff; }
