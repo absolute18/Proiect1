@@ -112,8 +112,18 @@ header{
 
 /* FEATURED */
 #featured{
-	.carouse-shadow{
-		box-shadow: 150px 50px $gray;
+	.carousel-shadow{
+		&:before{
+			content: "";
+			position: absolute;
+			top: 30%;
+			left: 10%;
+			right: 10%;
+			width: 80%;
+			height: 310px;
+			background: $gray;
+			z-index: -1;
+		}
 	}
 
 	.title{

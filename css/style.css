@@ -56,8 +56,16 @@ header #top {
     font-family: 'Muli', Arial, sans-serif; }
 
 /* FEATURED */
-#featured .carouse-shadow {
-  box-shadow: 150px 50px #f2f3f3; }
+#featured .carousel-shadow:before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 310px;
+  background: #f2f3f3;
+  z-index: -1; }
 
 #featured .title {
   font-size: 37px;
