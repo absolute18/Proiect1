@@ -112,7 +112,12 @@ header{
 
 /* FEATURED */
 #featured{
+	.owl-theme{
+	
+	}
+
 	.carousel-shadow{
+
 		&:before{
 			content: "";
 			position: absolute;
