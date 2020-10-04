@@ -113,7 +113,17 @@ header{
 /* FEATURED */
 #featured{
 	.owl-theme{
-	
+  font-size: 50px;
+  color: $red;
+  	.owl-nav{
+  			button:hover{
+  			background: none;
+  			color: black;
+  		}
+  			button:focus{
+  				outline: 0;
+  			}
+  	}
 	}
 
 	.carousel-shadow{
@@ -146,9 +156,9 @@ header{
 	    margin-top: 30px;
 		}
 	}
-	.txt-img{
-		@include img-carousel();
-		background: green;
+	.owl-item{
+		width: 344px !important;
+		height: 344px;
 
 		.category-featured{
 			@include position-img();
@@ -166,6 +176,13 @@ header{
 			line-height: 30px;
 			top: 180px;
 			right: 40px;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			line-clamp: 2;
+			height: 70px;
+			width: 300px;
+
 		}
 
 		.time-featured{
@@ -173,36 +190,38 @@ header{
 			font-size: 13px;
 			top: 280px;
 		}
-	}
 
-	.img-1{
-		background-image: url("../img/art.jpg");
- 	  background-size: cover;
-	}
+		.img-1{
+			background-image: url("../img/art.jpg");
+	 	  background-size: contain;
+	 	  background-position: bottom;
+	 	  background-repeat: no-repeat;
+		}
 
-	.img-2{
-		background-image: url("../img/travel.jpg");
- 	  background-size: cover;
-	}
+		.img-2{
+			background-image: url("../img/travel.jpg");
+	 	  background-size: cover;
+		}
 
-	.img-3{
-		background-image: url("../img/fashion-2.jpg");
- 	  background-size: cover;
-	}
+		.img-3{
+			background-image: url("../img/fashion-2.jpg");
+	 	  background-size: cover;
+		}
 
-	.img-4{
-		background-image: url("../img/fashion.jpg");
- 	  background-size: cover;
-	}
+		.img-4{
+			background-image: url("../img/fashion.jpg");
+	 	  background-size: cover;
+		}
 
-	.img-5{
-		background-image: url("../img/lifestyle.jpg");
- 	  background-size: cover;
-	}
+		.img-5{
+			background-image: url("../img/lifestyle.jpg");
+	 	  background-size: cover;
+		}
 
-	.img-6{
-		background-image: url("../img/fashion.jpg");
- 	  background-size: cover;
+		.img-6{
+			background-image: url("../img/fashion.jpg");
+	 	  background-size: cover;
+		}
 	}
 }
 
@@ -216,4 +235,15 @@ header{
 		color: $gray-2;
 		font-family: 'Mulibold', Arial, sans-serif;
 	}
+}
+
+.goTop{
+	position: fixed;
+	padding: 12px 19px;
+	background: $gray-2;
+	right: 25px;
+	bottom: 25px;
+	color: #fff;
+	opacity: 0.75;
+	
 }

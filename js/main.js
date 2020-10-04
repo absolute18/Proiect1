@@ -1,9 +1,12 @@
 $(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
+  $(".owl-carousel").owlCarousel({
   	loop:true,
   	nav:true,
   	dots:false
   });
+ 	$(".goTop").click(function(){
+ 		$("html").scrollTop( 0 );
+ 	})
 });
 
 
