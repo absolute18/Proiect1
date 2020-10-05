@@ -126,24 +126,28 @@ header #top {
     top: 280px; }
   #featured .owl-item .img-1 {
     background-image: url("../img/art.jpg");
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat; }
+    background-size: cover;
+    height: inherit; }
   #featured .owl-item .img-2 {
-    background-image: url("../img/travel.jpg");
-    background-size: cover; }
+    background-image: url("../img/travel-2.jpg");
+    background-size: cover;
+    height: inherit; }
   #featured .owl-item .img-3 {
     background-image: url("../img/fashion-2.jpg");
-    background-size: cover; }
+    background-size: cover;
+    height: inherit; }
   #featured .owl-item .img-4 {
     background-image: url("../img/fashion.jpg");
-    background-size: cover; }
+    background-size: cover;
+    height: inherit; }
   #featured .owl-item .img-5 {
     background-image: url("../img/lifestyle.jpg");
-    background-size: cover; }
+    background-size: cover;
+    height: inherit; }
   #featured .owl-item .img-6 {
     background-image: url("../img/fashion.jpg");
-    background-size: cover; }
+    background-size: cover;
+    height: inherit; }
 
 /* MIDDLE	*/
 #middle .title {

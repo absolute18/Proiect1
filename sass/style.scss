@@ -182,7 +182,6 @@ header{
 			line-clamp: 2;
 			height: 70px;
 			width: 300px;
-
 		}
 
 		.time-featured{
@@ -193,34 +192,38 @@ header{
 
 		.img-1{
 			background-image: url("../img/art.jpg");
-	 	  background-size: contain;
-	 	  background-position: bottom;
-	 	  background-repeat: no-repeat;
+	 	  background-size: cover;
+	 	  height: inherit;
 		}
 
 		.img-2{
-			background-image: url("../img/travel.jpg");
+			background-image: url("../img/travel-2.jpg");
 	 	  background-size: cover;
+	 	  height: inherit;
 		}
 
 		.img-3{
 			background-image: url("../img/fashion-2.jpg");
 	 	  background-size: cover;
+	 	  height: inherit;
 		}
 
 		.img-4{
 			background-image: url("../img/fashion.jpg");
 	 	  background-size: cover;
+	 	  height: inherit;
 		}
 
 		.img-5{
 			background-image: url("../img/lifestyle.jpg");
 	 	  background-size: cover;
+	 	  height: inherit;
 		}
 
 		.img-6{
 			background-image: url("../img/fashion.jpg");
 	 	  background-size: cover;
+	 		height: inherit;
 		}
 	}
 }
