@@ -7,11 +7,49 @@ $(document).ready(function(){
  	$(".goTop").click(function(){
  		$("html").scrollTop( 0 );
  	})
+
+ 	$(window).scroll(function() {
+
+    var scrollTop = $(this).scrollTop();
+    //console.log(scrollTop);
+      if (scrollTop > 550) {
+        $('.goTop').show();
+
+    } else {
+        $('.goTop').hide();
+    }
+	});
 });
 
 
+/* 
+
+var scrollPos = $(window).scrollTop();
+ 		if(scrollPos > 0){
+ 			$('.goTop').show();
+ 		}
+ 		else{
+ 			$('.goTop').hide();
+ 		}
 
 
+var scrollPos = $(window).scrollTop();
+
+var lastScrollTop = 0;
+$(window).scroll(function() {
+
+    var scrollTop = $(this).scrollTop();
+    
+      if (scrollTop > lastScrollTop) {
+        
+        $('.goTop').show();
+    } else {
+     
+        $('.goTop').hide();
+    }
+    
+    lastScrollTop = scrollTop;
+});
 
 /*
 obiect = {"kind":"youtube#searchListResponse","etag":"\"m2yskBQFythfE4irbTIeOgYYfBU/PaiEDiVxOyCWelLPuuwa9LKz3Gk\"","nextPageToken":"CAUQAA","regionCode":"KE","pageInfo":{"totalResults":4249,"resultsPerPage":5},"items":[{"kind":"youtube#searchResult","etag":"\"m2yskBQFythfE4irbTIeOgYYfBU/QpOIr3QKlV5EUlzfFcVvDiJT0hw\"","id":{"kind":"youtube#channel","channelId":"UCJowOS1R0FnhipXVqEnYU1A"}},{"kind":"youtube#searchResult","etag":"\"m2yskBQFythfE4irbTIeOgYYfBU/AWutzVOt_5p1iLVifyBdfoSTf9E\"","id":{"kind":"youtube#video","videoId":"Eqa2nAAhHN0"}},{"kind":"youtube#searchResult","etag":"\"m2yskBQFythfE4irbTIeOgYYfBU/2dIR9BTfr7QphpBuY3hPU-h5u-4\"","id":{"kind":"youtube#video","videoId":"IirngItQuVs"}}]}

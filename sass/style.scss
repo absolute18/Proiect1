@@ -248,5 +248,9 @@ header{
 	bottom: 25px;
 	color: #fff;
 	opacity: 0.75;
-	
+	display:none;
+}
+
+html{
+	scroll-behavior: smooth;
 }

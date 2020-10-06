@@ -13,4 +13,4 @@ $(function(){
 
 //$(':contains("Johannes")').css('border','solid 1px red');
 $("div.text-about").css('border','solid 1px red');
-}); 	
+}); */	
