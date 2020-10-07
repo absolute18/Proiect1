@@ -157,9 +157,7 @@ header{
 		}
 	}
 	.owl-item{
-		width: 344px !important;
-		height: 344px;
-
+    padding: 0 20px;
 		.category-featured{
 			@include position-img();
 			font-weight: 900;
@@ -188,42 +186,6 @@ header{
 			@include position-img();
 			font-size: 13px;
 			top: 280px;
-		}
-
-		.img-1{
-			background-image: url("../img/art.jpg");
-	 	  background-size: cover;
-	 	  height: inherit;
-		}
-
-		.img-2{
-			background-image: url("../img/travel-2.jpg");
-	 	  background-size: cover;
-	 	  height: inherit;
-		}
-
-		.img-3{
-			background-image: url("../img/fashion-2.jpg");
-	 	  background-size: cover;
-	 	  height: inherit;
-		}
-
-		.img-4{
-			background-image: url("../img/fashion.jpg");
-	 	  background-size: cover;
-	 	  height: inherit;
-		}
-
-		.img-5{
-			background-image: url("../img/lifestyle.jpg");
-	 	  background-size: cover;
-	 	  height: inherit;
-		}
-
-		.img-6{
-			background-image: url("../img/fashion.jpg");
-	 	  background-size: cover;
-	 		height: inherit;
 		}
 	}
 }
