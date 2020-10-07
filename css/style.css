@@ -28,7 +28,7 @@ header #top {
       color: #424851;
       font-size: 15px; }
       header #top .meniu-button button:hover {
-        color: red; }
+        color: #f13b3b; }
 
 /* ABOUT */
 #about .img-about img {
@@ -162,19 +162,25 @@ header #top {
   margin-bottom: 50px; }
 
 #middle .left .text-middle {
-  font-weight: 900;
   position: absolute;
   left: 260px; }
   #middle .left .text-middle .category-middle {
-    padding: 6px 50px 6px 9px;
-    max-width: 10px;
+    padding: 6px 11px;
+    display: initial;
     background: #f13b3b;
     color: #fff;
     font-size: 12px;
     font-weight: 900; }
+    #middle .left .text-middle .category-middle:hover {
+      background-color: #424851; }
   #middle .left .text-middle .title-middle {
-    font-size: 30px;
-    color: #424851; }
+    font-weight: 900;
+    font-size: 31px;
+    color: #424851;
+    margin: 10px 0;
+    line-height: 40px; }
+    #middle .left .text-middle .title-middle:hover {
+      color: #f13b3b; }
   #middle .left .text-middle .ago-middle {
     color: #989da2; }
 
