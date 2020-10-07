@@ -113,11 +113,10 @@ header #top {
     top: 180px;
     right: 40px;
     overflow: hidden;
-    white-space: nowrap;
     text-overflow: ellipsis;
-    line-clamp: 2;
-    height: 70px;
-    width: 300px; }
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; }
   #featured .owl-item .time-featured {
     position: absolute;
     left: 40px;
