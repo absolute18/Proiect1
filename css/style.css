@@ -158,6 +158,37 @@ header #top {
   color: #424851;
   font-family: 'Mulibold', Arial, sans-serif; }
 
+#middle .left .img-middle {
+  margin-bottom: 50px; }
+
+#middle .left .text-middle {
+  font-weight: 900;
+  position: absolute;
+  left: 260px; }
+  #middle .left .text-middle .category-middle {
+    padding: 6px 50px 6px 9px;
+    max-width: 10px;
+    background: #f13b3b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900; }
+  #middle .left .text-middle .title-middle {
+    font-size: 30px;
+    color: #424851; }
+  #middle .left .text-middle .ago-middle {
+    color: #989da2; }
+
+#middle .right .card-newsletter {
+  background: red;
+  padding: 150px 0px;
+  position: relative;
+  left: 100px;
+  margin-bottom: 60px; }
+  #middle .right .card-newsletter .text-news {
+    position: absolute;
+    left: 70px;
+    right: 190px; }
+
 .goTop {
   position: fixed;
   padding: 12px 19px;

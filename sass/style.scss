@@ -230,6 +230,7 @@ header{
 
 /* MIDDLE	*/
 #middle{
+
 	.title{
 		margin: 80px 0;
 		text-align: center;
@@ -237,6 +238,54 @@ header{
 		font-size: 40px;
 		color: $gray-2;
 		font-family: 'Mulibold', Arial, sans-serif;
+	}
+
+	.left{
+
+		.img-middle{
+			margin-bottom: 50px;
+		}
+
+		.text-middle{
+			font-weight: 900;
+			position: absolute;
+			left: 260px;
+
+			.category-middle{
+				padding: 6px 50px 6px 9px;
+				max-width: 10px;
+				background: $red;
+				color: #fff;
+				font-size: 12px;
+				font-weight: 900;
+			}
+
+			.title-middle{
+				font-size: 30px;
+				color: $gray-2;
+			}
+
+			.ago-middle{
+				color: #989da2;
+			}
+		}
+	}
+	.right{
+
+		.card-newsletter{
+			background: red;
+			padding: 150px 0px;
+			position: relative;
+			left: 100px;
+			margin-bottom: 60px;
+			.text-news{
+				position: absolute;
+				left: 70px;
+				right: 190px;
+			
+			
+			}
+		}
 	}
 }
 
