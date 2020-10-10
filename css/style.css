@@ -29,6 +29,8 @@ header #top {
       font-size: 15px; }
       header #top .meniu-button button:hover {
         color: #f13b3b; }
+      header #top .meniu-button button:focus {
+        outline: 0; }
 
 /* ABOUT */
 #about .img-about img {
@@ -49,6 +51,8 @@ header #top {
     border: none;
     font-family: 'Mulibold', Arial, sans-serif;
     font-weight: bold; }
+    #about .content-about .button-about button:focus {
+      outline: 0; }
   #about .content-about .text-about {
     color: #424851;
     font-size: 16px;
@@ -82,7 +86,8 @@ header #top {
   font-family: 'mulibold', Arial, sans-serif;
   text-align: center;
   margin: 82px 0 30px 0;
-  font-weight: 900; }
+  font-weight: 900;
+  animation: mover 1.5s; }
   #featured .title:after {
     border-bottom: 2px solid #f13b3b;
     content: "";
@@ -146,9 +151,7 @@ header #top {
     #middle .left .img-middle .overlay:hover {
       animation-name: imagesOverlay;
       animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
-      animation-iteration-count: 2; }
+      animation-fill-mode: forwards; }
 
 #middle .left .text-middle {
   position: absolute;
@@ -174,8 +177,79 @@ header #top {
     color: #989da2; }
 
 #middle .right .card-newsletter {
-  background: red;
-  padding: 40px; }
+  background: #f2f3f3;
+  padding: 95px 40px;
+  margin-bottom: 50px; }
+  #middle .right .card-newsletter .newsletter {
+    position: relative;
+    top: -50px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Mulish', Arial, sans-serif;
+    color: #424851; }
+  #middle .right .card-newsletter .txt-newsletter {
+    position: relative;
+    top: -30px; }
+  #middle .right .card-newsletter .email-newsletter:after {
+    border-bottom: 1px solid #424851;
+    content: "";
+    /* Necesar pentru a functiona after */
+    display: block;
+    /* Bloc*/
+    width: 100%;
+    margin-top: 40px; }
+  #middle .right .card-newsletter .button-newsletter {
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+    background: #f13b3b;
+    padding: 14px 0;
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    font-family: 'Mulish', Arial, sans-serif; }
+
+#middle .topics {
+  background: #f2f3f3;
+  padding: 50px 40px;
+  margin-bottom: 40px; }
+  #middle .topics .title-topics {
+    position: relative;
+    top: -20px;
+    color: #424851;
+    font-wight: 900;
+    font-size: 20px;
+    font-family: 'Mulish', Arial, sans-serif; }
+  #middle .topics .art {
+    margin-bottom: 12px; }
+  #middle .topics .fashion {
+    margin-bottom: 12px; }
+  #middle .topics .lifestyle {
+    margin-bottom: 12px; }
+
+#middle .social {
+  color: #fff;
+  background: #424851;
+  padding: 40px 50px; }
+  #middle .social .icon-social {
+    margin-top: 15px; }
+    #middle .social .icon-social .fa-facebook {
+      color: #3b5998;
+      background: #fff;
+      margin-right: 5px;
+      border-radius: 27px; }
+    #middle .social .icon-social .fa-pinterest {
+      color: #BD081C;
+      background: #fff;
+      margin-right: 5px;
+      border-radius: 27px; }
+    #middle .social .icon-social .fa-twitter-square {
+      color: #1DA1F2;
+      margin-right: 5px;
+      background: #fff; }
+    #middle .social .icon-social .fa-instagram-square {
+      background: #fff;
+      color: #000; }
 
 .goTop {
   position: fixed;
@@ -187,6 +261,65 @@ header #top {
   opacity: 0.75;
   display: none; }
 
+.rotate {
+  position: fixed;
+  padding: 13px 15px;
+  background: #f1f1f1;
+  border-radius: 0 8px 8px 0;
+  top: 160px;
+  color: #555d66;
+  border: 1px solid #ddd; }
+  .rotate .fas {
+    animation: spin 3s infinite linear; }
+    .rotate .fas:hover {
+      color: #0084ff; }
+
+#footer:before {
+  border-bottom: 2px solid #f2f3f3;
+  content: "";
+  /* Necesar pentru a functiona after */
+  display: block;
+  /* Bloc*/
+  width: 100%;
+  margin-top: 50px; }
+
+#footer .footer {
+  font-family: 'Mulish', Arial, sans-serif;
+  margin: 40px 0; }
+  #footer .footer .icon-footer .fa-facebook {
+    color: #3b5998;
+    background: #fff;
+    margin-right: 5px; }
+  #footer .footer .icon-footer .fa-pinterest {
+    color: #BD081C;
+    background: #fff;
+    margin-right: 5px; }
+  #footer .footer .icon-footer .fa-twitter-square {
+    color: #1DA1F2;
+    margin-right: 5px;
+    background: #fff; }
+  #footer .footer .title-footer {
+    font-wight: 900;
+    color: #424851;
+    font-size: 20px;
+    font-family: 'Mulish', Arial, sans-serif;
+    margin: 15px; }
+  #footer .footer .text-footer {
+    margin: 15px 0; }
+
+#copyright .copyright {
+  font-family: 'Mulish', Arial, sans-serif;
+  text-align: center;
+  margin: 50px 0; }
+  #copyright .copyright:before {
+    border-bottom: 2px solid #f2f3f3;
+    content: "";
+    /* Necesar pentru a functiona after */
+    display: block;
+    /* Bloc*/
+    width: 100%;
+    margin-bottom: 40px; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -196,6 +329,20 @@ html {
     background: transparent; }
   to {
     background: rgba(0, 0, 0, 0.2); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes mover {
+  0% {
+    transform: translateY(-45px);
+    opacity: 0.2; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
 
 /*
 @keyframes imagesOverlay{

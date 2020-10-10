@@ -66,6 +66,10 @@ header{
 				&:hover{
 				color: $red;
 				}
+
+  			&:focus{
+  				outline: 0;
+  			}
 			}
 		}
 	}
@@ -100,6 +104,10 @@ header{
 				border: none;
 				font-family: 'Mulibold', Arial, sans-serif;
 				font-weight: bold;
+
+				&:focus{
+  				outline: 0;
+  			}
 			}
 		}
 
@@ -150,6 +158,7 @@ header{
 		text-align: center;
 		margin: 82px 0 30px 0;
 		font-weight: 900;
+		animation: mover 1.5s;
 
 		&:after{
 			border-bottom: 2px solid $red;
@@ -224,8 +233,6 @@ header{
 					animation-name: imagesOverlay;
 					animation-duration: 0.5s;
 					animation-fill-mode: forwards;
-					animation-timing-function: ease-out;
-					animation-iteration-count: 2;
 				}
 			}
 		}
@@ -267,11 +274,98 @@ header{
 	.right{
 
 		.card-newsletter{
-			background: red;
-			padding: 40px;
+			background: #f2f3f3;
+			padding: 95px 40px;
+			margin-bottom: 50px;
 
-			.text-news{
+			.newsletter{
+				position: relative;
+				top: -50px;
+				font-weight: 900;
+				font-size: 20px;
+				font-family: 'Mulish', Arial, sans-serif;
+				color: $gray-2;
+			}
 
+			.txt-newsletter{
+				position: relative;
+				top: -30px;
+			}
+
+			.email-newsletter{
+
+				&:after{
+				border-bottom: 1px solid $gray-2;
+				content: ""; /* Necesar pentru a functiona after */
+		    display: block; /* Bloc*/
+		    width: 100%;
+		    margin-top: 40px;	
+				}
+			}
+
+			.button-newsletter{
+				position: relative;
+				bottom: -10px;
+				text-align: center;
+				background: $red;
+				padding: 14px 0;
+				color: #fff;
+				font-weight: 900;
+				font-size: 14px;
+				font-family: 'Mulish', Arial, sans-serif;
+			}
+		}
+	}
+	.topics{
+			background: #f2f3f3;
+			padding: 50px 40px;
+			margin-bottom: 40px;
+
+		.title-topics{
+			position: relative;
+			top: -20px;
+			color: $gray-2;
+			font-wight: 900;
+			font-size: 20px;
+			font-family: 'Mulish', Arial, sans-serif;
+		}
+		.art{
+			margin-bottom: 12px;
+		}
+		.fashion{
+			margin-bottom: 12px;
+		}
+		.lifestyle{
+			margin-bottom: 12px;
+		}
+	}
+	.social{
+		color: #fff;
+		background: $gray-2;
+		padding: 40px 50px;
+		.icon-social{
+			margin-top: 15px;
+
+			.fa-facebook{
+				color: #3b5998;
+				background: #fff;
+				margin-right: 5px;
+				border-radius: 27px;
+			}
+			.fa-pinterest{
+				color: #BD081C;
+				background: #fff;
+				margin-right: 5px;
+				border-radius: 27px;
+			}
+			.fa-twitter-square{
+				color: #1DA1F2;
+				margin-right: 5px;
+				background: #fff;
+			}
+			.fa-instagram-square{
+				background: #fff;
+				color: #000;
 			}
 		}
 	}
@@ -288,6 +382,78 @@ header{
 	display:none;
 }
 
+.rotate{
+	position: fixed;
+	padding: 13px 15px;
+	background: #f1f1f1;
+	border-radius: 0 8px 8px 0;
+	top: 160px;
+	color: #555d66;
+	border: 1px solid #ddd;
+
+	.fas{
+		animation: spin 3s infinite linear;
+		&:hover{
+			color:#0084ff;
+		}
+	}
+}
+
+#footer{
+		&:before{
+			border-bottom: 2px solid $gray;
+			content: ""; /* Necesar pentru a functiona after */
+	    display: block; /* Bloc*/
+	    width: 100%;
+	    margin-top: 50px;
+		}
+	.footer{
+		font-family: 'Mulish', Arial, sans-serif;
+		margin: 40px 0;
+		.icon-footer{
+			.fa-facebook{
+				color: #3b5998;
+				background: #fff;
+				margin-right: 5px;
+			}
+			.fa-pinterest{
+				color: #BD081C;
+				background: #fff;
+				margin-right: 5px;
+			}
+			.fa-twitter-square{
+				color: #1DA1F2;
+				margin-right: 5px;
+				background: #fff;
+			}
+		}
+		.title-footer{
+			font-wight: 900;
+			color: $gray-2;
+			font-size: 20px;
+			font-family: 'Mulish', Arial, sans-serif;
+			margin: 15px;
+		}
+		.text-footer{
+			margin: 15px 0;
+		}
+	}
+}
+#copyright{
+	.copyright{
+		font-family: 'Mulish', Arial, sans-serif;
+		text-align: center;
+		margin: 50px 0;
+			&:before{
+				border-bottom: 2px solid $gray;
+				content: ""; /* Necesar pentru a functiona after */
+		    display: block; /* Bloc*/
+		    width: 100%;
+		    margin-bottom: 40px;	
+				}
+	}
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -302,6 +468,27 @@ html{
 		background: rgba(0,0,0,0.2);
 	}
 } 
+
+@keyframes spin{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes mover{
+  0% { transform: 
+  	translateY(-45px);
+  	opacity: 0.2 ;
+  }
+  100% { 
+  	transform: translateY(0);
+  	opacity: 1; 
+  }
+}
+
 /*
 @keyframes imagesOverlay{
 	0%{background: transparent;}
