@@ -22,7 +22,7 @@ $(document).ready(function(){
   var waypoint = new Waypoint({
     element: document.getElementById('#featured .title'),
     handler: function() {
-      alert('You have scrolled to a thing');
+      console.log("hello");
     }
   });
 
