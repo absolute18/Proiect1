@@ -1,10 +1,9 @@
+
 /*$(document).ready(function(){
  	 $("button").click(function(){
     $("div.text-about").hide();
   });
  });
-
-
 
 $(function(){
 	$("button").click(function(){

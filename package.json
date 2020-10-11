@@ -15,8 +15,10 @@
     "gulp-cli": "^2.3.0",
     "gulp-sass": "^4.1.0",
     "jquery": "^3.5.1",
+    "jquery-waypoints": "^2.0.5",
     "owl.carousel": "^2.3.4",
-    "sass": "^1.26.11"
+    "sass": "^1.26.11",
+    "waypoints": "^4.0.1"
   },
   "devDependencies": {
     "gulp": "^4.0.2",

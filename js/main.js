@@ -19,6 +19,13 @@ $(document).ready(function(){
         $('.goTop').hide();
     }
 	});
+  var waypoint = new Waypoint({
+    element: document.getElementById('#featured .title'),
+    handler: function() {
+      alert('You have scrolled to a thing');
+    }
+  });
+
 });
 
 
