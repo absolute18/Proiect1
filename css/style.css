@@ -86,8 +86,7 @@ header #top {
   font-family: 'mulibold', Arial, sans-serif;
   text-align: center;
   margin: 82px 0 30px 0;
-  font-weight: 900;
-  animation: mover 1.5s; }
+  font-weight: 900; }
   #featured .title:after {
     border-bottom: 2px solid #f13b3b;
     content: "";

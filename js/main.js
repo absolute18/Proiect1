@@ -13,20 +13,29 @@ $(document).ready(function(){
     var scrollTop = $(this).scrollTop();
     //console.log(scrollTop);
       if (scrollTop > 550) {
-        $('.goTop').show();
+        $(".goTop").show();
 
     } else {
-        $('.goTop').hide();
+        $(".goTop").hide();
     }
 	});
   var waypoint = new Waypoint({
-    element: document.getElementById('#featured .title'),
+    element: document.getElementById("featured"),
     handler: function() {
-      console.log("hello");
-    }
-  });
+    document.getElementById('featuredTitle').style.animation = "mover 1.5s";
+    },
+    offset: 300
+  })
+   var waypoint = new Waypoint({
+    element: document.getElementById("middle"),
+    handler: function() {
+    document.getElementById('articles').style.animation = "mover 1.5s";
+    },
+    offset: 300
+  })
 
 });
+
 
 
 /* 
