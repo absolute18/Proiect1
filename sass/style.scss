@@ -55,21 +55,14 @@ header{
 		.meniu-button{
 			text-align: right;
 			margin: 15px 0 0 0;
-
-			button{
-				border: none;
-				background: #fff;
-				font-weight: 600;
-				color: $gray-2;
-				font-size: 15px;
-
+			font-weight: 600;
+			color: $gray-2;
+			font-size: 15px;
+			span{
+				cursor: pointer;
 				&:hover{
-				color: $red;
+					color: $red;
 				}
-
-  			&:focus{
-  				outline: 0;
-  			}
 			}
 		}
 	}
@@ -172,6 +165,24 @@ header{
 	.owl-item{
     padding: 0 20px;
     color: #fff;
+
+    .txt-img{
+   		.overlay{
+		  	width: calc(100% - 40px);
+		  	height: 100%;
+		  	position: absolute;
+		  	z-index: 2;
+		  	top: 0;
+		  	left: 20px;
+
+		  	&:hover{
+		  		animation-name: imagesOverlay;
+					animation-duration: 0.5s;
+					animation-fill-mode: forwards;
+		  	}
+	  	}
+  	}
+
 		.category-featured{
 			@include position-img();
 			font-weight: 900;
@@ -340,32 +351,46 @@ header{
 		}
 	}
 	.social{
-		color: #fff;
 		background: $gray-2;
 		padding: 40px 50px;
+		.title-social{
+			margin-bottom: 20px;
+			font-height: 900;
+			color: #fff;
+		}
+		.txt-social{
+			color: rgba(255,255,255,.8);
+		}
 		.icon-social{
 			margin-top: 15px;
+			border-radius:	100px;
+			.fa-facebook-f{
+				color: #fff;
+				margin-right: 5px;
+				background-color:	#3e5b98;
+				padding: 16px 19px;
+				border-radius: 100%;
 
-			.fa-facebook{
-				color: #3b5998;
-				background: #fff;
-				margin-right: 5px;
-				border-radius: 27px;
 			}
-			.fa-pinterest{
-				color: #BD081C;
-				background: #fff;
+			.fa-pinterest-p{
+				color: #fff;
+				background: #BD081C;
 				margin-right: 5px;
-				border-radius: 27px;
+				padding: 16px 18px;
+				border-radius: 100%;
 			}
-			.fa-twitter-square{
-				color: #1DA1F2;
+			.fa-twitter{
+				color: #fff; 
 				margin-right: 5px;
-				background: #fff;
+				background: #1DA1F2;
+				padding: 16px;
+				border-radius: 100%;
 			}
-			.fa-instagram-square{
-				background: #fff;
-				color: #000;
+			.fa-instagram{
+				background: #000; 
+				color: #fff;
+				padding: 16px;
+				border-radius: 100%;
 			}
 		}
 	}

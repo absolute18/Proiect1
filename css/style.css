@@ -20,17 +20,14 @@ header #top {
     font-family: 'Mulish', sans-serif; }
   header #top .meniu-button {
     text-align: right;
-    margin: 15px 0 0 0; }
-    header #top .meniu-button button {
-      border: none;
-      background: #fff;
-      font-weight: 600;
-      color: #424851;
-      font-size: 15px; }
-      header #top .meniu-button button:hover {
+    margin: 15px 0 0 0;
+    font-weight: 600;
+    color: #424851;
+    font-size: 15px; }
+    header #top .meniu-button span {
+      cursor: pointer; }
+      header #top .meniu-button span:hover {
         color: #f13b3b; }
-      header #top .meniu-button button:focus {
-        outline: 0; }
 
 /* ABOUT */
 #about .img-about img {
@@ -101,6 +98,17 @@ header #top {
 #featured .owl-item {
   padding: 0 20px;
   color: #fff; }
+  #featured .owl-item .txt-img .overlay {
+    width: calc(100% - 40px);
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 20px; }
+    #featured .owl-item .txt-img .overlay:hover {
+      animation-name: imagesOverlay;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards; }
   #featured .owl-item .category-featured {
     position: absolute;
     left: 40px;
@@ -227,28 +235,40 @@ header #top {
     margin-bottom: 12px; }
 
 #middle .social {
-  color: #fff;
   background: #424851;
   padding: 40px 50px; }
+  #middle .social .title-social {
+    margin-bottom: 20px;
+    font-height: 900;
+    color: #fff; }
+  #middle .social .txt-social {
+    color: rgba(255, 255, 255, 0.8); }
   #middle .social .icon-social {
-    margin-top: 15px; }
-    #middle .social .icon-social .fa-facebook {
-      color: #3b5998;
-      background: #fff;
+    margin-top: 15px;
+    border-radius: 100px; }
+    #middle .social .icon-social .fa-facebook-f {
+      color: #fff;
       margin-right: 5px;
-      border-radius: 27px; }
-    #middle .social .icon-social .fa-pinterest {
-      color: #BD081C;
-      background: #fff;
+      background-color: #3e5b98;
+      padding: 16px 19px;
+      border-radius: 100%; }
+    #middle .social .icon-social .fa-pinterest-p {
+      color: #fff;
+      background: #BD081C;
       margin-right: 5px;
-      border-radius: 27px; }
-    #middle .social .icon-social .fa-twitter-square {
-      color: #1DA1F2;
+      padding: 16px 18px;
+      border-radius: 100%; }
+    #middle .social .icon-social .fa-twitter {
+      color: #fff;
       margin-right: 5px;
-      background: #fff; }
-    #middle .social .icon-social .fa-instagram-square {
-      background: #fff;
-      color: #000; }
+      background: #1DA1F2;
+      padding: 16px;
+      border-radius: 100%; }
+    #middle .social .icon-social .fa-instagram {
+      background: #000;
+      color: #fff;
+      padding: 16px;
+      border-radius: 100%; }
 
 .goTop {
   position: fixed;
