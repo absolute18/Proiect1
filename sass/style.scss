@@ -488,6 +488,14 @@ header{
 	width: 30%;
 	z-index: 10;
 	background: #fff;
+		.title{
+			margin-bottom: 20px;
+			font-family: 'Mulish', sans-serif;
+			font-weight: 900;
+			font-size: 20px;
+			color: $gray-2;
+		}
+
 		.logo{
 			font-size: 27px;
 			color: $red;
@@ -496,18 +504,32 @@ header{
 			font-family: 'Mulish', sans-serif;
 			margin: 25px 40px;
 		}
-		.fas{
+
+		.fa-times{
 			margin: 35px 0 15px 150px;
 			cursor: pointer;
 		}
+
 		.card-menu{
 			margin: 0 30px;
 			background-color: #f2f3f3;
 			padding: 22.5px 40px;
+
 			ul{
 			  list-style-type: none;
   			margin: 0;
-  			padding: 0
+  			padding: 0;
+  			li{
+  				margin-bottom: 15px;
+  			}
+			}
+
+			.fab{
+				margin-left: 15px;
+
+				&:hover{
+					color: $red;
+				}
 			}
 		}
 }

@@ -348,6 +348,12 @@ header #top {
   width: 30%;
   z-index: 10;
   background: #fff; }
+  #menu .title {
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #424851; }
   #menu .logo {
     font-size: 27px;
     color: #f13b3b;
@@ -355,7 +361,7 @@ header #top {
     font-weight: 900;
     font-family: 'Mulish', sans-serif;
     margin: 25px 40px; }
-  #menu .fas {
+  #menu .fa-times {
     margin: 35px 0 15px 150px;
     cursor: pointer; }
   #menu .card-menu {
@@ -366,6 +372,12 @@ header #top {
       list-style-type: none;
       margin: 0;
       padding: 0; }
+      #menu .card-menu ul li {
+        margin-bottom: 15px; }
+    #menu .card-menu .fab {
+      margin-left: 15px; }
+      #menu .card-menu .fab:hover {
+        color: #f13b3b; }
 
 #for-menu .overlay {
   position: fixed;
