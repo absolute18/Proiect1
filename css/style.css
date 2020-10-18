@@ -287,7 +287,8 @@ header #top {
   border-radius: 0 8px 8px 0;
   top: 160px;
   color: #555d66;
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+  z-index: 2; }
   .rotate .fas {
     animation: spin 3s infinite linear; }
     .rotate .fas:hover {
@@ -338,6 +339,42 @@ header #top {
     /* Bloc*/
     width: 100%;
     margin-bottom: 40px; }
+
+#menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30%;
+  z-index: 10;
+  background: #fff; }
+  #menu .logo {
+    font-size: 27px;
+    color: #f13b3b;
+    letter-spacing: -1px;
+    font-weight: 900;
+    font-family: 'Mulish', sans-serif;
+    margin: 25px 40px; }
+  #menu .fas {
+    margin: 35px 0 15px 150px;
+    cursor: pointer; }
+  #menu .card-menu {
+    margin: 0 30px;
+    background-color: #f2f3f3;
+    padding: 22.5px 40px; }
+    #menu .card-menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+
+#for-menu .overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1; }
 
 html {
   scroll-behavior: smooth; }

@@ -415,6 +415,7 @@ header{
 	top: 160px;
 	color: #555d66;
 	border: 1px solid #ddd;
+	z-index: 2;
 
 	.fas{
 		animation: spin 3s infinite linear;
@@ -476,6 +477,50 @@ header{
 		    width: 100%;
 		    margin-bottom: 40px;	
 				}
+	}
+}
+
+#menu{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 30%;
+	z-index: 10;
+	background: #fff;
+		.logo{
+			font-size: 27px;
+			color: $red;
+			letter-spacing: -1px;
+			font-weight: 900;
+			font-family: 'Mulish', sans-serif;
+			margin: 25px 40px;
+		}
+		.fas{
+			margin: 35px 0 15px 150px;
+			cursor: pointer;
+		}
+		.card-menu{
+			margin: 0 30px;
+			background-color: #f2f3f3;
+			padding: 22.5px 40px;
+			ul{
+			  list-style-type: none;
+  			margin: 0;
+  			padding: 0
+			}
+		}
+}
+
+#for-menu{
+	.overlay{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 1;
 	}
 }
 
