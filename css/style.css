@@ -347,7 +347,8 @@ header #top {
   height: 100%;
   width: 30%;
   z-index: 10;
-  background: #fff; }
+  background: #fff;
+  display: none; }
   #menu .title {
     margin-bottom: 20px;
     font-family: 'Mulish', sans-serif;
@@ -365,28 +366,39 @@ header #top {
     margin: 35px 0 15px 150px;
     cursor: pointer; }
   #menu .card-menu {
+    font-family: 'Mulish', sans-serif;
     margin: 0 30px;
     background-color: #f2f3f3;
     padding: 22.5px 40px; }
+    #menu .card-menu .fa-angle-down {
+      float: right;
+      color: rgba(66, 72, 81, 0.8); }
+    #menu .card-menu .icon {
+      color: #424851; }
     #menu .card-menu ul {
       list-style-type: none;
       margin: 0;
       padding: 0; }
       #menu .card-menu ul li {
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        color: #424851; }
+        #menu .card-menu ul li:hover {
+          color: #f13b3b; }
     #menu .card-menu .fab {
       margin-left: 15px; }
       #menu .card-menu .fab:hover {
         color: #f13b3b; }
 
-#for-menu .overlay {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 1; }
+#for-menu {
+  display: none; }
+  #for-menu .overlay {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1; }
 
 html {
   scroll-behavior: smooth; }

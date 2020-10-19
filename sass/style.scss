@@ -488,6 +488,8 @@ header{
 	width: 30%;
 	z-index: 10;
 	background: #fff;
+	display: none;
+	
 		.title{
 			margin-bottom: 20px;
 			font-family: 'Mulish', sans-serif;
@@ -511,9 +513,19 @@ header{
 		}
 
 		.card-menu{
+			font-family: 'Mulish', sans-serif;
 			margin: 0 30px;
 			background-color: #f2f3f3;
 			padding: 22.5px 40px;
+
+			.fa-angle-down{
+				float: right;
+				color: rgba(66,72,81,0.8);
+			}
+
+			.icon{
+				color: $gray-2;
+			}
 
 			ul{
 			  list-style-type: none;
@@ -521,6 +533,11 @@ header{
   			padding: 0;
   			li{
   				margin-bottom: 15px;
+  				color: $gray-2;
+
+  				 &:hover{
+							color: $red;
+						}
   			}
 			}
 
@@ -535,6 +552,7 @@ header{
 }
 
 #for-menu{
+	display: none;
 	.overlay{
 		position: fixed;
 		height: 100%;
