@@ -7,7 +7,7 @@ $(document).ready(function(){
   });
 
 	$("#menu .fa-times").click(function(){
-    $("#for-menu .overlay").hide(10);
+    $("#for-menu").hide(10);
     $("#menu").hide(10);
   });
 
