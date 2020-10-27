@@ -8,6 +8,9 @@ $gray-2: #424851;
 	font-family: 'mulibold', Arial, sans-serif;
 }
 
+@use 'sass/media';
+@import 'sass/media';
+
 @mixin img-carousel(){
 	max-width: none;
 	width: 344px;
@@ -304,9 +307,22 @@ header{
 			}
 
 			.email-newsletter{
+				input{
+					border-top-style: hidden;
+	        border-right-style: hidden;
+	        border-left-style: hidden;
+	        border-bottom-style: hidden;
+	        background: $gray;
+	        font-family: 'Mulish', Arial, sans-serif;
+	        font: inherit;
+	        
+	        &:focus{
+	         outline: none;	
+	        }
+	       }
 
 				&:after{
-				border-bottom: 1px solid $gray-2;
+				border-bottom: 1px solid rgba(66,72,81,0.2);
 				content: ""; /* Necesar pentru a functiona after */
 		    display: block; /* Bloc*/
 		    width: 100%;
@@ -405,6 +421,7 @@ header{
 	color: #fff;
 	opacity: 0.75;
 	display:none;
+	z-index: 5;
 }
 
 .rotate{
@@ -508,7 +525,7 @@ header{
 		}
 
 		.fa-times{
-			margin: 35px 0 15px 150px;
+			margin: 35px 0 15px 9.5vw;
 			cursor: pointer;
 		}
 

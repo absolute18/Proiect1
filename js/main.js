@@ -1,12 +1,33 @@
 $(document).ready(function(){
+
+  //CAROUSEL
+
   $(".owl-carousel").owlCarousel({
   	loop:true,
   	nav:true,
-  	dots:false
+  	dots:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        576:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
   });
+
+  //GO TOP
+
  	$(".goTop").click(function(){
  		$("html").scrollTop( 0 );
  	})
+
+  //BUTTON
 
  	$(window).scroll(function() {
 
@@ -19,6 +40,9 @@ $(document).ready(function(){
         $(".goTop").hide();
     }
 	});
+
+  //ANIMATION TITLE
+
   var waypoint = new Waypoint({
     element: document.getElementById("featured"),
     handler: function() {
@@ -33,6 +57,19 @@ $(document).ready(function(){
     },
     offset: 300
   })
+
+  //MENU
+
+  $("#top .meniu-button").click(function(){
+    $("#for-menu").show(300);
+    $("#menu").show(300);
+  });
+
+  $("#menu .fa-times").click(function(){
+    $("#for-menu").hide();
+    $(this).next("#for-menu").hide('slide', {direction: 'left'},1400);
+    $("#menu").hide(100);
+  });
 
 });
 
