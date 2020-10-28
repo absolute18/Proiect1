@@ -1,15 +1,17 @@
+@import 'media';
+@use 'media';
+
 /* VARIABLES */
+
 $red: #f13b3b;
 $gray: #f2f3f3;
 $gray-2: #424851;
+
 @mixin title(){
 	font-size: 37px;
 	color: $gray-2;
 	font-family: 'mulibold', Arial, sans-serif;
 }
-
-@use 'sass/media';
-@import 'sass/media';
 
 @mixin img-carousel(){
 	max-width: none;
