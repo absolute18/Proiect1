@@ -1,4 +1,4 @@
-@import 'media';
+
 @use 'media';
 
 /* VARIABLES */
@@ -624,3 +624,6 @@ html{
 	50%{background: rgba(0,0,255,0.5);}
 	100%{background: rgba(0,0,0,0.2);}
 } */
+
+
+@import "media";
