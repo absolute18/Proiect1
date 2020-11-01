@@ -63,7 +63,6 @@ $gray-2: #424851;
 		.left{
 
 			.text-middle{
-    			width: 200px;
 
 				.title-middle{
 					font-size: 20px;
@@ -267,9 +266,13 @@ $gray-2: #424851;
 		}
 		.left{
 
+			.img-middle{
+			
+			margin-bottom: 1vh;
+			}
+
 			.text-middle{
-				left: 225px;
-				width: 125px;
+				margin-bottom: 3vh;
 			}
 		}
 
@@ -308,4 +311,16 @@ $gray-2: #424851;
 			}
 		}
 	}
+	#middle{
+
+		.left{
+			.text-middle {
+				
+			}
+
+			.img-middle {
+				
+			}
+		}
+	}  
 }
