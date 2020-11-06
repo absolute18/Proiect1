@@ -1,5 +1,6 @@
 const {src,dest,watch} =  require('gulp');
 const sass = require('gulp-sass');
+const csso = require('gulp-csso');
 
 function convertSass(){
 	return src("sass/style.scss").pipe(sass()).pipe(dest("css"));
@@ -7,6 +8,10 @@ function convertSass(){
 
 function watchCode(){
 	 watch("sass/style.scss",convertSass);	
+}
+
+function minify(){
+	return src("css/style.css").pipe(csso()).pipe(dest("css"));
 }
 
 function css(){
@@ -33,6 +38,7 @@ function cssC(){
 		"node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"]).pipe(dest("css"));
 }
 
+exports.minify = minify;
 exports.w = watchCode;
 exports.convertSass = convertSass;
 exports.js = js;

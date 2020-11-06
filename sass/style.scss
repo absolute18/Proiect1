@@ -193,7 +193,7 @@ header{
 			z-index: 3;
 			@include position-img();
 			font-weight: 900;
-			top: 130px;
+			top: 40px;
 			background: $red;
 			padding: 5px 12px;
 			font-size: 12px;
@@ -205,21 +205,17 @@ header{
 			font-weight: 900;
 			font-size: 28px;
 			line-height: 30px;
-			top: 180px;
+			top: 95px;
 			right: 40px;
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
 			line-clamp: 2;
 			height: 70px;
-			width: 300px;
 		}
 
 		.time-featured{
 			z-index: 3;
 			@include position-img();
 			font-size: 13px;
-			top: 280px;
+			top: 230px;
 		}
 	}
 }
@@ -243,6 +239,7 @@ header{
 			
 			
 			.ov{
+				width: fit-content;
 				position: relative;
 				.img{
 					&:hover{
